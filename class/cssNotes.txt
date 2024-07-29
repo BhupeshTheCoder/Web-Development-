@@ -1,0 +1,92 @@
+10/4/24
+
+css: -itmis use to design web application.
+     -css stand for Cascading Style Sheet.
+     -latest version of css is css3 
+
+
+*there are three ways to use css 
+1.inline css :  in starting tag we use style attribute and in that we use property and value.
+2.internal css : in html page we use style tag inside we write css code 
+         slector{
+            property:value;
+            property:value;
+            property:value;
+         }
+3.external css : in this we create a seperate css file and that css file we import in html file head part by using link tag.    
+-because of this html and css code will be in seperate file 
+-it will be easy to maintain.
+
+*Selector: selecting an element.
+1.element selector: in this we use element name directly.
+2.group selector : here we make group of element and apply command css property to them.
+3.id selector(#): when you have to apply css property to single element only ,in that case we use.
+4.class selector(.): when we have to apply comman bunch of css peroperty to an multiple element in that case we use it.
+5.universal selector (*): when we have to apply css property to all element available in webpage in that case we use it.
+
+*border;
+*How to use inspect element
+*BoxModel Concept
+1.content: it can be any text or image
+2.padding: it is ue to clear area between content and element border.
+3.border: a line drown around an element
+4.margine: it is use to cleare area arond element ( or cleare area inbetween element and screen window);
+
+*Position : it is use to move element after applying left,right,top,botton value.
+Position:static;
+Position:relative; => element will move to left right top,botton, direction.
+
+Position: absolute; => when we want child element must work according to its parent element. for this parent element must have Position:relative and child element must have Position:absolute;
+
+Position:fixed; => it is use to fixed element on screen window.
+Position:sticky; => if you want to stick element to an border of window.
+
+z-index: it is use to decide stack priority of an element.
+        -it has two values 1 and -1
+        - 1 means heigh and -1 means low 
+
+*combinators: it tells relation between selectors 
+1.descendant combinators (space)
+2.child combinators(>)
+3.adjesent sibling combinators(+)
+4.general sibling combinators(~)
+
+*how to create navigation bar 
+
+Task : design give task on position 
+Task: design your form which you created for resume 
+
+
+
+ek elememt m another elment ho toh child absoulte and parent ko fixed position dete h
+
+
+overflow used to fix the content 
+
+block start in new line and have 100%of width
+inline its come side by side and it will equire size which is required
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

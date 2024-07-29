@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+        let student =["bhupesh","deepesh", "Kartik", "shreyansh"];
+        console.log(student);
+        document.write("Length of array is: ", student.length, "<br>");
+        document.write("Size of an array: ",student.length-1,"<br>");
+        document.write("Return value of an array: ",student[1],"<br>");
+        student[1]="pranav"
+        document.write("Value of index 1 changed: ",student,"<br>");
+
+        //push method-- we can add values in last index of array
+
+        student.push("RAJA","Rishi");
+        document.write("add values at last index of array: ",student,"<br>");
+
+
+        //pop method-- we can remove values in last index of array
+
+        student.pop();
+        document.write("Remove last index value:",student,"<br>");
+
+        //unshift method-- we can add values in starting index of array
+
+        student.push("shyam");
+        document.write(student,"<br>");
+
+        //shift method-- we can remove values in starting index of array
+
+        student.push();
+        document.write(student,"<br>");
+        
+        
+        //splice(startIndex,deleteCount,data to insert and remove values from middle index of array)
+
+        student.splice(2,0,"Jacob","King");
+        document.write("Add values in middle(index,remove index,value1,value2): ",student,"<br>");
+        
+
+        student.splice(3,2);
+        document.write("Remove values in middle(index,remove index): ",student,"<br>");
+
+
+        student.splice(2,0,"radhae","gopal");
+        document.write("Add & remove values in middle(index,remove index,value1,value2): ",student,"<br>");
+
+        //to string(): it converts array data into string
+        console.log(student);
+        console.log(student.toString());
+
+        //join (seprator): it convvert array data into string , it one parameter to seprate data
+        
+        console.log(student);
+        console.log(student.join("*"));
+        console.log(student.join("@"));
+
+
+    </script>
+</body>
+</html>

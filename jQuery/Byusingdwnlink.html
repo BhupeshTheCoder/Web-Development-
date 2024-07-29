@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Using downloaded file link -->
+    <script src="./jQuery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <strong id="d1">Click on me to Hide image</strong> &nbsp; &nbsp;
+    <strong id="d2">Click on me to show image</strong> <br> <br>
+    <img id="d3" src="../Assests/images/cupcake.jpg" alt="cupcake" heigth="300px" width="300px">
+    
+    <h1 class="myName">I am Student</h1>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $("#d1").click(()=>{
+                $("#d3").hide()
+            });
+        
+        })
+        $(document).ready(function(){
+            $("#d2").click(()=>{
+                $("#d3").show()
+            });
+       
+        })
+        $(".myName").hover(function(){
+            $(this).css({"color":"gold","text-transform":"uppercase"});
+            $(".myName").hover(function(){
+            $(this).css({"color":"green","text-transform":"lowercase"});
+            })
+        
+            })    
+
+        $(".myName").click(function(){
+            $(this).css({"color":"blue","text-transform":"uppercase","background-color":"grey"});    
+            })
+        $(".myName").dblclick(function(){
+            $(this).css({"color":"purple","text-transform":"uppercase","background-color":"yellow"});    
+            })
+        $(".myName").mouseleave(function(){
+            $(this).css({"color":"black","text-transform":"uppercase","background-color":"Aqua"});    
+            })          
+        
+    </script>
+</body>
+</html>

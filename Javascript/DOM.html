@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        Hello Everyone
+    </div>
+
+    <ul id="d2">
+
+    </ul>
+
+    <script>
+        //create paragraph
+        let parentElement = document.getElementById("d1");
+        console.log(parentElement);
+
+        let newPara = document.createElement("p");
+        console.log(newPara);
+
+        newPara.innerHTML = "This is new para"
+
+        parentElement.appendChild(newPara);
+        //creatre ul
+        let parentUl = document.getElementById("d2");
+        console.log(parentUl);
+        let newLi = document.createElement("li");
+        console.log(newLi);
+
+        newLi.innerHTML = "Li created";
+
+        parentUl.appendChild(newLi);
+
+        //create array
+
+        let fruits = ["a","b","c","d"]
+        for(let i=0;i<fruits.length;i++){
+            let newLi = document.createElement("li");
+        console.log(newLi);
+
+        newLi.innerHTML = fruits[i];
+
+        parentUl.appendChild(newLi);
+        }
+    </script>
+</body>
+</html>

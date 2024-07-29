@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let course = ["html","javascript","React","nodejs"]
+        console.log(course);
+
+        //1.) forEach() it call another method once for each array element.
+        course.forEach((val,index)=>{
+            console.log(val);
+        })
+
+
+        let rollNo = [10,20,30,40,60,70,80]
+        console.log(rollNo);
+
+        //2.)map()---to manipulate array and return new arrayafter performing manipulation with array value;
+        let mapout=rollNo.map((val)=>{
+            return val*5;
+        })
+        console.log(mapout);
+
+
+        //3.)filter()--- it call another method once for each array element and it return new array of those element who satisfy given condition
+
+        let filout = rollNo.filter((val)=>{
+            return val>=2 && val<=6;
+
+        });
+        console.log(filout)
+
+
+
+        //every(): it call another method once for each array element and it return new array true value if all array values satisfy given condition
+        
+        let everyOut = rollNo.every((val)=>{
+            return val > 0;
+        })
+        console.log(everyOut);
+
+
+        //some():it call another method once for each array element and it return new array true value if some array values satisfy given condition
+        let someOut = rollNo.some((val)=>{
+            return val > 2;
+        })
+        console.log(someOut);
+
+         //resuce/reduceRight: it return array as single value, it takes two parameter,prev,2.next
+
+         let reduceOut = rollNo.reduce((prev,next)=>{
+            return prev+next;
+        });
+        console.log(reduceOut);
+         
+
+    </script>
+</body>
+</html>

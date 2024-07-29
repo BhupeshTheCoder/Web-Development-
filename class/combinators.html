@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.descendant combinators (space) */
+        .grandfather p{
+            color: brown;
+            font-size: 25px;
+        }
+        /* 2.child combinators(>) */
+        .grandfather > p{
+            background-color: aqua;
+        }
+        /* .adjesent sibling combinators(+) */
+        .grandfather + p{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        /* 4.general sibling combinators(~) */
+        .grandfather ~ p{
+            color: red;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="grandfather">
+        <p>this is child-1 element</p>
+        <p>this is child-2 element</p>
+        <p>this is child-3 element</p>
+        <span>  <p>this is sub-child-4 element</p></span>
+        <p>this is child-5 element</p>
+    </div>
+
+    <p>this is child-6 element</p>
+    <p>this is child-7 element</p>
+    <p>this is child-8 element</p>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+.logo{
+    width: 140px; 
+    height: 127px;
+}
+
+.title{
+    position: relative;
+    left: 166px;
+    top: -87px;
+}
+
+.navinden{
+    position: relative;
+    left: -11px;
+    top: 7px;
+    background-color: white;
+}

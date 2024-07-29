@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img id="d1" src="../Assests/images/cupcake.jpg" alt="cake" width="300px" height="300px" >
+    
+    </div>
+    
+    <form>
+        <button id="d2" type="button">Hide</button>
+        <button id="d3" type="button">Show</button>
+        <button id="d4" type="button">Toggle</button>
+        
+    </form> 
+    
+
+    <script>
+        $(document).ready(function(){
+            $("#d2").click(()=>{
+               // $("#d1").hide();
+                $("#d1").fadeIn();
+        })
+    })
+        $(document).ready(function(){
+            $("#d3").click(()=>{
+                //$("#d1").show();
+                $("#d1").fadeOut();
+        })
+    })
+    $(document).ready(function(){
+            $("#d4").click(()=>{
+                $("#d1").fadeToggle(100,()=>{
+                    alert("ok")
+                });
+        })
+    })
+    </script>
+</body>
+</html>

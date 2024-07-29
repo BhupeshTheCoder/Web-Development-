@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let fruits = ["Mango", "Grapes", "banana"];
+        for(let i=0;i<fruits.length;i++){
+            document.write(fruits[i]+ "<br>");
+        }
+
+
+
+        let std =[{id:101,name:"bhupesh",city:"ratlam"}]
+        for(let i=0; i<std.length;i++){
+            document.write(`id:${std[i].id} name:${std[i].name} city:${std[i].city}`)
+
+        }
+        document.write("<br>")
+        for(let f of fruits){
+            document.write(f+",");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "product": [
+    {
+      "id": "101",
+      "pname": "laptob",
+      "price": 57000,
+      "pcompany": "DELL"
+    },
+    {
+      "id": "102",
+      "pname": "keyboard",
+      "price": 1099,
+      "pcompany": "DELL"
+    },
+    {
+      "id": "103",
+      "pname": "mouse",
+      "price": 700,
+      "pcompany": "DELL"
+    },
+    {
+      "pname": "phone",
+      "price": "5000",
+      "pcompany": "DELLl",
+      "id": "104"
+    },
+    {
+      "id": "105",
+      "pname": "Graphic card",
+      "price": 5000,
+      "pcompany": "DELL"
+    },
+    {
+      "id": "413d"
+    },
+    {
+      "id": "609c"
+    },
+    {
+      "id": "453c",
+      "pname": "abc",
+      "price": 100,
+      "pcompany": "asdd"
+    },
+    {
+      "id": "00d9",
+      "pname": "",
+      "price": "",
+      "pcompany": ""
+    }
+  ]
+}

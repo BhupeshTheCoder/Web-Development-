@@ -1,0 +1,33 @@
+.property1{
+    border: 2px solid yellow;
+    width: 85%;
+    margin: auto;
+    height: 300px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    background-image: url(../Assests/images/facelog.png);
+    overflow: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.opacity{
+    border: 2px solid red;
+    width: 85%;
+    margin: auto;
+    background-color: black;
+    opacity: 0.3;
+    height: 300px;
+    color: white;
+}
+
+/* 1. diff btwen thread index and  opacity
+   2. diff between id and class selector
+     z index used to stack property value  between 0 and 1 whwere as
+   3. diff betwwen disaplay:block; display:inline; display:inline-block
+      diff btwn span and div ,,,,api,,,inline and block
+      
+      -->dispaly:block= when we have to convert inline element into block element 
+      -->dispaly:inline=to convert block element into inline.
+      -->display:inline-block=when we have to apply height and width to inline element we use this    property in value
+   */

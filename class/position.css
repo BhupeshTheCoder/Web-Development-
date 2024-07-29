@@ -1,0 +1,48 @@
+
+header{
+    background-color: aqua;
+    border-bottom: 5px solid blue;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.logo{
+    border: 3px solid red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    vertical-align: middle;
+}
+.mytitle{
+    font-size: 40px;
+    color: blue;
+    font-weight: 600;
+    position: relative;
+    left: 47px;
+    top: 8px;
+}
+
+.parent{
+    border: 5px solid black;
+    width: 420px;
+    height: 200px;
+    background-color: lightcyan;
+    left: 30px;
+    position: relative;
+}
+
+.child{
+    border: 3px solid green;
+    width: 100px;
+    height: 50px;
+    background-color: burlywood;
+    left: 22px;
+    position: absolute;
+}
+
+.posFixed{
+    width: 50px;
+    position: fixed;
+    right: 0px;
+}

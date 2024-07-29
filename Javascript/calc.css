@@ -1,0 +1,23 @@
+.input1{
+    display: grid;
+    border: 2px solid blue;
+    position: relative;
+    left: 310px;
+}
+.input2{
+    display: grid;
+    border: 2px solid blue;
+    position: relative;
+    left: 310px;
+}
+.buttonalign{
+    position: relative;
+    left: 294px;
+}
+
+.resbox{
+    width: 207px;
+    position: relative;
+    left: 306px;
+    text-align: justify;
+}

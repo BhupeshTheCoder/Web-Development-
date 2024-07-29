@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="d1"></h1>
+    <h1 id="d2">Ram</h1>
+    <h1 id="d3">Shyam</h1>
+    <h1 id="d4">Shyam</h1>
+    <h1 id="d5">Shyam</h1>
+    
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            // Use of document.write//
+        document.write("Jai Siya Ram<br>");
+        document.write(1000+1+2+10);
+
+
+        //window.alert()//
+        window.alert("Om"); 
+        window.alert(3*3); 
+        
+
+        //console.log()
+        console.log("This i your follower BHupesh");
+        console.log(9*1);
+        
+
+        // DOM(Document object Model (represent complete webpage-document), (it gets that element --getElementById),  (allow us to write in between the element--innerHTML) )
+        document.getElementById("d1").innerHTML = "Ayodhya";  ///here we set values
+        let data = document.getElementById("d2").innerHTML
+        console.log(data)
+
+        document.getElementById("d3").style.color ="red"; //here we apply style rule
+        document.getElementById("d3").style.backgroundColor ="blue";
+
+
+        let dateObj = new Date();
+        document.getElementById("d1").innerHTML = "oye";
+        document.getElementById("d1").innerHTML = dateObj;
+        document.getElementById("d1").innerHTML = dateObj.getFullYear();
+        document.getElementById("d2").innerHTML = dateObj.getUTCDate();
+        document.getElementById("d2").innerHTML = dateObj.getUTCMonth();
+
+        function myclock(){
+            let d= new Date();
+            document.getElementById("d4").innerHTML = d.toLocaleTimeString();
+
+        }
+        //myclock();
+        setInterval(myclock,1000);
+
+
+
+        </script>
+
+
+
+
+
+      
+
+
+</body>
+</html>

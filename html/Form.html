@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Form.css">
+</head>
+<body>
+    <form action="post">
+        <label for="photo">Upload Your Profile: </label>
+        <input type="file" name="profile" title="Size should be 10kb" size="10kb">  
+
+        <br>
+
+        <label for="Fname">First Name</label>
+        <input type="text" minlength="2" maxlength="10" pattern="^[A-Z a-z]{2,10}$" placeholder="Username" title="Maximum 10 characters" required>
+
+        <label for="Lname">Last Name</label>
+        <input type="text" minlength="2" maxlength="10" pattern="^[A-Z a-z]{2,10}$" placeholder="Username"   title="Maximum 10 characters"required>
+        
+        <br> 
+
+        <label for="number">Mobile No.</label>
+        <input type="number" minlength="10" maxlength="10" pattern="^[0-9]{10,10}$" placeholder="Number" 
+        title="Maximum 10 characters" required>
+        
+        <br>
+
+        <label for="email">Email Id</label>
+        <input type="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Email Address" required>
+         
+        <br>
+        
+        <label for="Carrier obj">Carrier Objective</label>
+        <input type="text" minlength="100" maxlength="200" pattern="^[a-zA-Z]" title="" placeholder="200 characters Address" required>
+        
+        <br>
+         <div>
+        <label for="Sno">Sno</label>
+        <input type="number" value="1" readonly disabled>
+        <label for="board">Board</label>           
+            <select id="board" name="board">
+            <option value="10">10 <sup>th</sup></option>
+            <option value="12">12 <sup>th</sup></option> 
+            <option value="be">BE</option> 
+            <option value="mtech">MTECH</option> 
+            <option value="bcom">BCOM</option> 
+            <option value="phd">PHD</option>
+            </select>
+       
+        <label for="uni">University</label>           
+            <select id="uni" name="uni">
+            <option value="cbse">CBSE</option>
+            <option value="state">State Board</option> 
+            </select>
+
+        <label for="per">percentage</label>
+        <input type="number" minlength="5" maxlength="10" title="" placeholder="percentage%" required>  
+        <label for="year">Year</label>           
+            <select id="year" name="year" aria-placeholder="year">
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="200">2008</option>
+            <option value="200">2009</option>
+            <option value="200">2010</option>
+            <option value="200">2011</option>
+            <option value="200">2012</option>
+            <option value="200">2013</option>
+            <option value="200">2014</option>
+            <option value="200">2016</option>
+            <option value="200">2017</option>
+            <option value="200">2018</option>
+            <option value="200">2019</option>
+            <option value="200">2020</option>
+            <option value="200">2021</option>
+            <option value="200">2022</option>
+            <option value="200">2023</option>
+            <option value="200">2024</option>
+            <option value="200">2025</option>
+            </select>
+        </div>        
+
+        <div>
+                <label for="Sno">Sno</label>
+                <input type="number" value="2" readonly disabled>
+                <label for="board">Board</label>           
+                           <select id="board" name="board">
+                            <option value="10">10 <sup>th</sup></option>
+                            <option value="12">12 <sup>th</sup></option> 
+                            <option value="be">BE</option> 
+                            <option value="mtech">MTECH</option> 
+                            <option value="bcom">BCOM</option> 
+                            <option value="phd">PHD</option> 
+
+                          </select>
+               
+                     <label for="uni">University</label>           
+                       <select id="uni" name="uni">
+                        <option value="cbse">CBSE</option>
+                        <option value="state">State Board</option> 
+                      </select>
+                <label for="per">percentage</label>
+                <input type="number" minlength="5" maxlength="10" title="" placeholder="percentage%" required>  
+                <label for="year">Year</label>           
+                       <select id="year" name="year" aria-placeholder="year">
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="200">2008</option>
+                        <option value="200">2009</option>
+                        <option value="200">2010</option>
+                        <option value="200">2011</option>
+                        <option value="200">2012</option>
+                        <option value="200">2013</option>
+                        <option value="200">2014</option>
+                        <option value="200">2016</option>
+                        <option value="200">2017</option>
+                        <option value="200">2018</option>
+                        <option value="200">2019</option>
+                        <option value="200">2020</option>
+                        <option value="200">2021</option>
+                        <option value="200">2022</option>
+                        <option value="200">2023</option>
+                        <option value="200">2024</option>
+                        <option value="200">2025</option>
+                         
+                      </select>
+                </div> 
+                <div>
+                    <label for="Sno">Sno</label>
+                    <input type="number" value="3" readonly disabled>
+                    <label for="board">Board</label>           
+                           <select id="board" name="board">
+                            <option value="10">10 <sup>th</sup></option>
+                            <option value="12">12 <sup>th</sup></option> 
+                            <option value="be">BE</option> 
+                            <option value="mtech">MTECH</option> 
+                            <option value="bcom">BCOM</option> 
+                            <option value="phd">PHD</option> 
+
+                          </select>
+                   
+                         <label for="uni">University</label>           
+                           <select id="uni" name="uni">
+                            <option value="cbse">CBSE</option>
+                            <option value="state">State Board</option> 
+                          </select>
+                    <label for="per">percentage</label>
+                    <input type="number" minlength="5" maxlength="10" title="" placeholder="percentage%" required>  
+                    <label for="year">Year</label>           
+                           <select id="year" name="year" aria-placeholder="year">
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="200">2008</option>
+                            <option value="200">2009</option>
+                            <option value="200">2010</option>
+                            <option value="200">2011</option>
+                            <option value="200">2012</option>
+                            <option value="200">2013</option>
+                            <option value="200">2014</option>
+                            <option value="200">2016</option>
+                            <option value="200">2017</option>
+                            <option value="200">2018</option>
+                            <option value="200">2019</option>
+                            <option value="200">2020</option>
+                            <option value="200">2021</option>
+                            <option value="200">2022</option>
+                            <option value="200">2023</option>
+                            <option value="200">2024</option>
+                            <option value="200">2025</option>
+                             
+                          </select>
+                    </div>    
+        <label for="hobbies">Hobbies</label>
+        <input type="text" name="hobbies" id="hobbies" required>
+        
+
+        <button type="submit">submit</button>   
+        <button type="reset">Reset</button>   
+        </form>
+</body>
+</html>

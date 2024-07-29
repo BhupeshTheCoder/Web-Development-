@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+        //1.)Default Function
+        function greeting(){
+            document.write("Good Morning Everyone <br>");
+        } 
+        greeting();
+
+        //2.)parameter function
+        function welcome(std1,std2,std3){
+          //  document.write("Welcome " +std1+std2+std3+"<br>");  ///paranthese m hota h parametrised function
+          document.write(`welcome you ${std1} ,${std1} ,${std1} <br>`)
+        } 
+        // welcome("Bhupesh");
+        // welcome("Shreyansh");
+        // welcome("Ram");
+        welcome("Bhupesh ","Shreyansh ","Ram");
+
+
+        //a.)//function with return value
+        function addition(num1,num2){
+            return num1+num2;
+
+        }
+        let add = addition(500,900)
+        document.write(add);
+
+
+        //4.)anoymous function Funton with no name is callled anoymous function
+       // let sub =function(){   ///default function
+        //     return 1000+200
+        // }
+        //console.log(sub())
+        
+        
+        //parametrised function
+
+        let sub =function(num1,num2){
+            return num1-num2
+        }
+        console.log(sub(500,100))
+
+
+
+        //4.)Arrow function(): function with np name and function keyword called arrow
+        // let mul = () =>{
+        //     return 5*2;
+        // }
+        // console.log(mul());
+
+        //parametrised function
+
+        
+        // let mul = (num1,num2) =>{
+        //     return num1*num2;
+        // }
+        // console.log(mul(8,6));
+
+
+        
+        let mul = (num1,num2) => num1 * num2;
+            
+        console.log(mul(9,9));
+
+
+        //5.)optional parametrised Function --- it is parmeter will be optional not mandatoory to pass value to it .It will be at last..
+
+
+        let fullName =(fname,lname,mname="")=>{
+            return fname+lname+mname;
+        }
+        console.log(fullName("Bhupesh ", "Verma ", "Tailor"));
+        console.log(fullName("Deepesh ", "Gupta "));
+
+
+        //6.)Rest paramter function: hen we don't know how many parameter are required in tha case we use it here we use spread operator(Parameter1+parameter2....parameter n)-----display in array
+        //when we fetch data from server side we don'tknow the amount of data  we get
+
+        let stdList = (...std)=>{
+            return std
+        }
+
+        console.log(stdList("Bhupesh ", "Deppesh", "shreyansh" ,"123", 123));
+
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

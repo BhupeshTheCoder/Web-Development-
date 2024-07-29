@@ -1,0 +1,202 @@
+17/4/24
+
+
+-component: it is partial part of react app.
+           which we cam re-use multiple time.
+
+
+-in react app.js is roolt component 
+-In react we have two types of component 
+
+1.function component: when your main focus is on UI design in that case we use it. 
+2.class component: when we need to write complex logic in that case we use it.
+
+Note: when you create component in react component name start with capital letter.
+
+*how to display component output individually
+-to display component output individually for first we import component and write component as tag 
+
+*JSX(javascript XML): it makes react code easy and allows us to write html code in react. In JSX we have to use one parent element to wrap multiple child element. parent element must be any block element like div,p,h1-h6 etc.
+
+*props: it is parameter or functional parameter which is use to pass data inside component.
+-it returns object type of data.
+-to access props in function component for that we need to write props.propsname
+-to access props in class component for that we need to write this.props.propsname
+
+Tas1: create one Function component with name MyDetails containing myName,contact,dddress,gender,education as props with value display its out on browser.
+
+Tas2: create one class component with name FriendDetails containing name,contact,dddress,gender,education as props with value display its out on browser.
+
+===========================================================
+18/4/24 
+
+*What is react:
+-it is javascript library.
+-which is use to create rich UI(User Interface)
+-it create single page application.
+-it is not a framework. 
+
+*S/W pre-requisit 
+-nodejs 
+-create-react-app 
+
+*Technology aware about 
+*html,css,js(Basicjs,ES5 & ES6,oops)
+
+*There ae two ways to create react project 
+1. By Using npx (no need to install configuration file) 
+   - npx create-react-app appname
+   - cd appname
+   - npm start 
+
+2. By using npm (need to install configuration file) 
+   - npm install -g create-react-app
+   - create-react-app appname.
+   - cd appname
+   - npm start 
+
+3. By using vit 
+- npm install -g vite
+- vite create my-react-app --template react
+- cd my-react-app
+- npm run dev   
+
+*What is differance bet react and angular 
+
+React                                       Angular 
+-it is library                      -it is framework 
+-we use js and XML for developed    -we use typescript and html for development
+-it uses Virtual DOM                -it uses Real DOM 
+-it is faster                       -it is slower than react 
+-we can perform one way databinding  - we cam perform two-way databinding 
+-facebook developed and maintain it  -Google develope and maintain angular 
+
+*State : it is use to handle essentital data in class component 
+        -it write always in class contructor. 
+        -it returns object of data to us.  
+
+
+*setState method : 
+-it is use to manipulate state data 
+
+*What is de-structuring : 
+-creating constant variable and storing data in it. 
+-we can destructure array and onject 
+-while destructuring object variable name must be same as keyname. 
+
+*Use of Snipet for creating component easily  
+
+- rfce : it will create normal function component 
+- rafce : it will generate arrow function component 
+
+
+*How to use Bootstrap 
+step1: install Bootstrap 
+       npm i bootstrap 
+step2: go to index.js file and import its path 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+*how to use css in react 
+-there are three ways to use cssin react 
+1.internal css: to use it we need to write style property with values
+2.external css : in this we create a seperate css file and that import in component
+3.module css : if you have to write css property for perticular component for that we use it. 
+ -it file name must be filename.module.css 
+ -we can access it by creating variable of it. 
+
+*conditional rendering : display component output on the basis of condition. 
+1. if else: in this if condition is true then if block will execute otherwise else block.
+2. element as variable : in this we store data in variable and that variable put inside element.
+3.use of ternary operator: it is a short hand syntax for if else.
+                synatax: (condition) ? truepart : false;
+
+4. short-circuit: it will execute only when condition is true. it is denoted by &&
+
+*What is Virtual DOM: 
+*How to render array of object data 
+
+
+
+Task: create one Class component with name EmpDetails in that class state having one property with emp containg data for 10 employee with id, name post,salary,gender,address . display array of object data into table 
+
+
+*component interaction : accessinf data from one component another component
+ParentComp(class component)
+ChildComp(function component)
+
+
+
+*Hooks : react hooks allows us to use class component feature in function component
+         -by using hooks we can use state in function component also.
+         -hooks introduces in react version 16 
+
+         1.useState:
+         2.useEffect:
+         3.useContext
+         4.useRef:
+         5.useReducer:
+         6.useCallback:
+         7.useMemo:
+         8.custome Hook :
+
+*Rules to use Hooks 
+-it works only with function component.
+-it can not be render conditionaly.
+-it always use at top level component.
+
+1.useState Hook: it allows us to use state in function component.
+           -it takes two parameter in it 1.current state,2.function-to-update state 
+           -to use it first we have to import it from react library.
+           -useState hooks can hold number,string,boolean,array and object type of data in it.
+syntax:    const [currentState,functionToupdateSate] = useState();
+
+2.useEffect Hook : it is use to perform sideeffect function in function component.
+                  -side effect means fetching data fromserver,use of times,Dom manipulation.
+                  -it is use to perform operation after rendering of component output.
+                  -it takes two parameter 1.callback function, 2.dependency.
+                  -after component render useEffect hook execute at list ones.
+                  -it perform componentDidMount,shouldComponentupdate,componentDidupdate like of class component.
+                  synatax:  useEffect(callbackFunction,dependency)
+
+case1: when no dependency pass.
+      -it execute after every render
+      -componentDidMount,componentDidupdate 
+
+ex:  useEffect(()=>{
+      setCount(count+1)
+    })
+case2: when we pass dependency as black array
+      -it execute only ones 
+      -it should shouldComponentupdate
+
+   ex:useEffect(()=>{
+       setCount(count+1)
+    },[]);
+
+case3: when we pass dependency value 
+
+*how to insert images and multimedia in react project 
+*how to create constant file.
+
+
+
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

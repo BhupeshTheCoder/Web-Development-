@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let emp ={id:1,name:"sandy",post:"Front-end Developer",salary:56000,single: true,address:{city:"MP",pin:4501},
+        details:function(){
+            return `id:${emp.id} name:${emp.name} post:${emp.post} salary:${emp.salary}`
+        }};
+        document.write(emp.id,"<br>");
+        document.write(`id:${emp.id} name:${emp.name} post:${emp.post} salary:${emp.salary} <br>`);
+
+
+        document.write(emp.details());
+
+
+
+        ///convert object data into json
+
+
+        let jsondata = JSON.stringify(emp);
+        document.write(jsonData,"<br>");
+        
+        ///convert json to object data
+         
+        let objectData = JSON.parse(jsonData);
+        document.write(onjectData)
+         
+
+        let dataObj = newDate()
+
+    </script>
+</body>
+</html>
